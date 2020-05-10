@@ -211,11 +211,11 @@ extension Pager {
                 }
                 newPage = max(0, min(self.numberOfPages - 1, newPage))
 
-                //withAnimation(.easeOut) {
+                withAnimation {
                     self.pageIndex = newPage
                     self.draggingOffset = 0
                     self.draggingStartTime = nil
-                //}
+                }
 
             }
         )
